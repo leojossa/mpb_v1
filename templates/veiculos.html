@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="icon" type="image/jpg" href="../static/img/logo-sem-fundo.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/e321f551d7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <main id="main">
+
+        <nav class="navbar">
+            <div class="navbar-container container">
+                <input type="checkbox" name="" id="">
+                <div class="hamburger-lines">
+                    <span class="line line1"></span>
+                    <span class="line line2"></span>
+                    <span class="line line3"></span>
+                </div>
+                <ul class="menu-items">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#car">Encontre um Carro</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+                <h1 class="logo">mpb</h1>
+            </div>
+            <div class="nav-bar">
+                <ul class="nav-bar">
+                    <li><a class="nav-link" href="/host"> Seja um Anfitrião</a></li>
+                </ul>    
+            </div>
+            <div class="header-btn" id="header-btn">
+                <li><a class="login" href="#login">
+                        <i class="bi bi-person"></i>
+                    </a>
+                </li>
+            </div>
+        </nav>
+
+            <section class="host" id="host">
+            <div class="host-img">
+                <img src="../static/img/carsharing2_sem_fundo2.png" alt="">
+            </div>
+                <div class="host-form">
+                    <form action="\veiculo" method="post">
+                    <h1 class="heading">Cadastre seu 
+                        <span id="subtitle">Carro</span>
+                    </h1>
+
+                    {% with messages = get_flashed_messages() %}
+                    {% if messages %}
+                    {% for message in messages %}
+                    <div class="alert alert-sucess alert-dismissible fade show" role="alert">
+                        <i class="bi bi-check-circle-fill"></i><li>{{ message }}</li>
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                    {% endfor %}
+                    {% endif %}
+                    {% endwith %}
+
+
+                    <div class="input-box-carro">
+                        <label for="">Marca</label>
+                        <input id="marca" type="text" name="marca" placeholder="Digite a marca do seu carro">
+                    </div>
+                    <div class="input-box-carro">
+                        <label for="">Modelo</label>
+                        <input id="modelo" type="text" name="modelo" placeholder="Digite o modelo">  
+                    </div>
+                    <div class="input-box-carro">
+                        <label for="">Ano</label>
+                        <input id="ano" type="text" name="ano" placeholder="Digite o Ano">
+                    </div>
+                    <div class="input-box-carro">
+                        <label for="">Placa</label>
+                        <input id="placa" type="text" name="placa" placeholder="Digite a Placa" required>
+                    </div>
+                    <div class="input-box-carro">
+                        <label for="">Renavam</label>
+                        <input id="renavam" type="text" name="renavam" placeholder="Digite o Renavam" required>
+                    </div>
+                    <div class="input-box-carro">
+                        <label for="">Renavam</label>
+                        <input id="cnh" type="text" name="cnh" placeholder="Digite o numero da sua CNH" required>
+                    </div>
+                    <div class="envia-foto">
+                        <input id="foto" type="file" class="envia-foto" autocomplete="off">
+                        <input type="submit" value="Enviar" class="btn-enviar">
+                    </div>
+                    <div class="continue-buttom">
+                        <button id="btn-continue"><a href="#">Cadastrar</a></button>
+                        <button id="btn-loading" class="btn btn-primary" type="button" disabled>
+                            <span class="spinner-border spinner-border-sm" aria-hidden="true"></span>
+                            <span role="status">Loading...</span>
+                        </button>
+                    </div>
+                    </form>
+                </div>
+        </section>
+        
+        <footer id="footer">
+            <h2>mpb &copy; moving people beyond</h2>
+        </footer>
+
+    </main>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../static/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../static/script.js"></script>
+    
+</body>
+</html>
