@@ -112,7 +112,7 @@ body {
 .nav-bar li{
   position: relative;
   top: -46px;
-  left: 190px;
+  left: 200px;
   list-style-type: none;
 }
 .nav-bar a {
@@ -138,7 +138,7 @@ body {
 
 .header-btn li {
   position: relative;
-  left: 110px;
+  left: 150px;
   top: -85px;
   font-size: 1.5rem;
   padding: 0.6rem;
@@ -267,6 +267,8 @@ body {
   }
   
   #about h2 {
+    position: relative;
+    top: 220px;
     font-size: 2.3rem;
     color: var(--main-color);
   }
@@ -342,7 +344,7 @@ section#veiculos{
     font-size: 1.5rem;
     color: #2c2f3f;
     position: relative;
-    top: 450px;
+    top: 650px;
 }
 section#veiculos span#subtitle {
     position: relative;
@@ -613,14 +615,14 @@ body .host{
 }
 .func-img img{
     position: relative;
-    top: 130px;
+    top: 430px;
     height: 450px;
     width: 550px;
     left: 150px;
 }
 .funciona h1{
     position: relative;
-    top: -400px;
+    top: -100px;
     left: 200px;
     color: #2c2f3f;
     font-size: 2rem;
@@ -632,7 +634,7 @@ body .host{
 }
 .topics h2{
     position: relative;
-    top: -350px;
+    top: -50px;
     left: 790px;
 }
 .topics h2 p{
@@ -647,13 +649,13 @@ body .host{
 }
 .topics h3{
     position: relative;
-    top: -418px;
+    top: -118px;
     left: 820px;
     right: 800px;
 }
 .topics h4{
     position: relative;
-    top: -415px;
+    top: -115px;
     left: 820px;
     font-size: 0.8rem;
     font-weight: normal;
@@ -670,20 +672,20 @@ body .host{
   }
   .duvidas h1{
     position: relative;
-    top: -300px;
+    top: -70px;
     font-size: 2.5rem;
   }
 
   .duvidas h2{
     position: relative;
-    top: -250px;
+    top: -50px;
     font-size: 0.8rem;
     list-style-type: none;
     left: 210px;
   }
   .duvidas2 h2{
     position: relative;
-    top: -390px;
+    top: -190px;
     font-size: 0.8rem;
     list-style-type: none;
     left: 610px;
@@ -696,7 +698,7 @@ body .host{
 }
 .app-stores img{
     position: relative;
-    top: 1230px;
+    top: 1400px;
     left: 500px;
     width: 100px;
     margin-right: 1rem;
@@ -728,37 +730,37 @@ body .host{
 /* ......../ section reserve /.......... */
 .reserve-img img{
   position: relative;
-  top: 450px;
+  top: 650px;
   height: 300px;
   width: 300px;
   left: 450px;
 }
 .reserve-desc1 h1{
   position: relative;
-  top: 200px;
+  top: 400px;
   left: 200px;
   color: #FF17A6;
 }
 .reserve-desc1 span{
   position: relative;
-  top: 200px;
+  top: 400px;
   left: 200px;
 }
 .reserve-desc2 h1{
   position: relative;
-  top: 150px;
+  top: 350px;
   left: 800px;
   color: #FF17A6;
 }
 .reserve-desc2 span{
   position: relative;
-  top: 155px;
+  top: 355px;
   left: 800px;
 }
 
   /* ......../ media query /.......... */
   
-  @media (max-width: 1980px) {
+  @media (max-width: 1920px) {
       .navbar {
         opacity: 0.95;
       }
@@ -791,8 +793,7 @@ body .host{
         width: 35px;
         position: absolute;
         top: 17px;
-        left: 20px;
-        z-index: 2;
+        left: 13px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -867,4 +868,42 @@ body .host{
         transform: rotate(-35deg);
       }
 
+  }
+  @media (max-width: 500px){
+    .navbar-container .hamburger-lines {
+      display: block;
+      height: 23px;
+      width: 35px;
+      position: absolute;
+      top: 17px;
+      left: -40px;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .header-btn li{
+      position: relative;
+      left: -17px;
+    }
+    .nav-bar li{
+      position: relative;
+      left: 70px;
+    }
+    .logo {
+      position: relative;
+      order: 1;
+      font-size: 2.3rem;
+      margin-bottom: 0.5rem;
+      left: -100px;
+    }
+    .showcase-container img{
+      position: relative;
+      width: auto;
+      height: auto;
+    }
+    .input-box{
+      flex-direction: column;
+      overflow-y: scroll;
+    }
   }
