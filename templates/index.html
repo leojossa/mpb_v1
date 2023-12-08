@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="icon" type="image/jpg" href="../static/img/logo-sem-fundo.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/e321f551d7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <main id="main">
+
+        <nav class="navbar">
+            <div class="navbar-container container">
+                <input type="checkbox" name="" id="">
+                <div class="hamburger-lines">
+                    <span class="line line1"></span>
+                    <span class="line line2"></span>
+                    <span class="line line3"></span>
+                </div>
+                <ul class="menu-items">
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#veiculos">Encontre um Carro</a></li>
+                    <li><a href="#funciona">Como funciona</a></li>
+                    <li><a href="/comece">Comece já</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+                <h1 class="logo">mpb</h1>
+            </div>
+            <div class="nav-bar">
+                <ul class="nav-bar">
+                    <li><a class="nav-link" href="/host"> Seja um Anfitrião</a></li>
+                </ul>    
+            </div>
+            <div class="header-btn" id="header-btn">
+                <li><a class="login" href="/login">
+                        <i class="bi bi-person"></i>
+                    </a>
+                </li>
+            </div>
+        </nav>
+
+        <section class="showcase-area" id="showcase">
+            <div class="showcase-container">
+                <img src="../static/img/trip.jpg" alt="">
+                <form action="">
+                    <div class="input-box">
+                        <span>Onde</span>
+                        <input type="search" name="" id="local" placeholder="bairro, endereço, hotel">
+                    </div>
+                    <div class="input-box">
+                        <span>De</span>
+                        <input type="date" name="" id="" placeholder="dia/mês/ano">
+                    </div>
+                    <div class="input-box">
+                        <span>Até</span>
+                        <input type="date" name="" id="" placeholder="dia/mês/ano">
+                    </div>
+                    <button class="btn"><i class="bi bi-search"></i></button>
+                    <!--<input type="submit" name="" id="" class="btn">-->
+                </form>
+            </div>
+    
+        </section>
+        
+        <section id="about">
+            <div class="about-wrapper container">
+                <div class="about-text">
+                    <p class="small">Sobre a mpb</p>
+                    <h2>Sonho</h2>
+                    <p>
+                        Nossa motivação vem da busca por entregar ao mercado a consciência sobre nosso atual modelo de consumo e como podemos melhorar o mundo em que vivemos
+    
+                    </p>
+                </div>
+                <div class="about-img">
+                    <img src="../static/img/Imagem_sobre.png" alt="about" />
+                </div>
+            </div>
+        </section>
+
+        <!--secao que mostra os veiulos-->
+        <section class="veiculos" id="veiculos">
+            <h1 class="heading">Categorias de
+                <span id="subtitle">Carros</span>
+            </h1>
+            <div class="swiper veiculos-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide box">
+                        <img src="../static/img/corolla_sem_fundo.png" alt="">
+                        <div class="content">
+                            <h3>Sedan</h3>
+                            <button class="button">Reserve</button>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide box">
+                        <img src="../static/img/renegade_sem_fundo2.png" alt="">
+                        <div class="content">
+                            <h3>Suv Compacto</h3>
+                            <button class="button">Reserve</button>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide box">
+                        <img src="../static/img/vw-virtus-2024-12-removebg-preview.png" alt="">
+                        <div class="content">
+                            <h3>Sedan Compacto</h3>
+                            <button class="button">Reserve</button>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide box">
+                        <img src="../static/img/tiguan_sem_fundo2 - Copia.jpg" alt="">
+                        <div class="content">
+                            <h3>Suv Medio</h3>
+                            <button class="button">Reserve</button>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide box">
+                        <img src="../static/img/Onix_sem_fundo.png" alt="">
+                        <div class="content">
+                            <h3>Hatch Compacto</h3>
+                            <button class="button">Reserve</button>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide box">
+                        <img src="../static/img/mercedes_sem_fundo2.png" alt="">
+                        <div class="content">
+                            <h3>Premium</h3>
+                            <button class="button">Reserve</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        <section class="reserve" id="reserve">
+            <div class="reserve-img">
+                <img src="../static/img/reserve um carro.png" alt="">
+            </div>
+            <div class="reserve-desc1">
+                <h1>Reserve um Carro ></h1>
+                <span>No seu condomínio, na sua rua ou </br>
+                    em qualquer lugar da cidade, </br>
+                    encontre o carro perfeito para sua </br>
+                    próxima aventura!
+                </span>
+            </div>
+            <div class="reserve-desc2">
+                <h1>Seja um Anfitrião</h1>
+                <span>Acelere seu lado empreendedor e </br>
+                    comece a construir um pequeno </br>
+                    negócio de compartilhamento de </br>
+                    carros na mpb!
+                </span>
+            </div>
+        </section>
+
+        <section class="funciona" id="funciona">
+            <div class="func-img">
+                <img src="../static/img/como funciona2.png" alt="">
+            </div>
+                <div class="funciona-form">
+                    <form action="funciona">
+                    <h1 class="func">Como funciona a  
+                        <span id="subtitle">mpb</span>
+                    </h1>
+                    <div class="topics">
+                        <h2 class="number">1
+                            <p></p>
+                            <h3>
+                                Encontre o carro perfeito
+                            </h3>
+                            <h4>
+                                Informe um local e uma data e navegue por </br>
+                                todas as categorias de carros </br>
+                                compartilhados pelos anfitriões locais.
+                            </h4>
+                        </h2>
+                        <h2 class="number2">2
+                            <p></p>
+                            <h3>
+                                Reserve sua viagem
+                            <h4>Reserve no APP da mpb ou online, </br>
+                                escolha um plano de proteção e diga “olá” </br>
+                                para seu anfitrião! Cancele gratuitamente até 24 horas </br>
+                                antes de sua viagem.
+                            </h4>
+                            </h3>
+                        </h2>
+                        <h2 class="number2">3
+                            <p></p>
+                            <h3>
+                                Pegue a estrada
+                            <h4>Retire o carro onde combinar ou pegue </br>
+                                direto com seu anfitrião. Faça o checkin e </br>
+                                abra seu carro via APP, pegue as chaves e pé na estrada.
+                            </h4>
+                            </h3>
+                        </h2>
+                    </div>
+                    </form>
+                    <div class="duvidas">
+                        <form action="duvidas">
+                            <h1 class="duvidas">
+                                Ainda com duvidas? Vamos responder
+                            </h1>
+                            <h2>
+                                <li><a href="reserva">O que preciso para reservar um carro na mpb?</a></li></br>
+                                <li><a href="seguro">Eu preciso de um seguro pessoal?</a></li></br>
+                                <li><a href="reserva">Outro motorista pode dirigir o carro que reservei?</a></li></br>
+                                <li><a href="cancelamento">Qual a politica de cancelamento da mpb?</a></li>
+                            </h2>
+                        </form>
+                    </div>
+                    <div class="duvidas2">
+                        <form action="duvidas2">
+                            <h2>
+                                <li><a href="acidente">O que acontece se eu sofrer um acidente?</a></li></br>
+                                <li><a href="seguro">Posso ter o carro que reservei sendo entregue a mim?</a></li></br>
+                                <li><a href="reserva">Como consigo descontos quando reservo um carro?</a></li></br>
+                                <li><a href="cancelamento">Existe programa de fidelidade?</a></li>
+                            </h2>
+                        </form>
+                    </div>
+                </div>
+        </section>
+
+        <div class="app-stores" id="app-stores">
+            <img src="../static/img/apple pay.png" alt="">
+            <img src="../static/img/google play.png" alt="">
+        </div>
+
+        <footer id="footer">
+            <h2>mpb &copy; moving people beyond</h2>
+        </footer>
+
+    </main>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../static/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../static/script.js"></script>
+    
+</body>
+</html>
