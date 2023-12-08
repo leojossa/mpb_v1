@@ -758,7 +758,7 @@ body .host{
 
   /* ......../ media query /.......... */
   
-  @media (max-width: 1400px) {
+  @media (max-width: 1980px) {
       .navbar {
         opacity: 0.95;
       }
