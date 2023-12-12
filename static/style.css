@@ -170,7 +170,7 @@ body {
 
 .nav-bar li{
     position: relative;
-    top: -580px;
+    top: -545px;
     left: 50px;
     list-style-type: none;
 }
@@ -665,6 +665,7 @@ body .host{
     left: 200px;
     color: #2c2f3f;
     font-size: 2rem;
+    width: 50%;
 }
 .func span{
     background-color: var(--main-color);
@@ -675,6 +676,7 @@ body .host{
     position: relative;
     top: -50px;
     left: 790px;
+    width: 20%;
 }
 .topics h2 p{
     position: relative;
@@ -698,6 +700,7 @@ body .host{
     left: 820px;
     font-size: 0.8rem;
     font-weight: normal;
+    width: 50%;
 }
 #func-footer h2 {
     position: relative;
@@ -713,6 +716,7 @@ body .host{
     position: relative;
     top: -70px;
     font-size: 2.5rem;
+    width: 100%;
   }
 
   .duvidas h2{
@@ -721,6 +725,7 @@ body .host{
     font-size: 0.8rem;
     list-style-type: none;
     left: 210px;
+    width: 45%;
   }
   .duvidas2 h2{
     position: relative;
@@ -728,6 +733,7 @@ body .host{
     font-size: 0.8rem;
     list-style-type: none;
     left: 610px;
+    width: 45%;
   }
 
 /* ......../ app logos /.......... */
@@ -772,27 +778,30 @@ body .host{
   top: 650px;
   height: 300px;
   width: 300px;
-  left: 450px;
+  left: 300px;
 }
-.reserve-desc1 h1{
+.reserve-desc1 h2{
   position: relative;
   top: 400px;
-  left: 200px;
+  left: 30px;
   color: #FF17A6;
+  width: 30%;
 }
-.reserve-desc1 span{
+.reserve-desc1 p{
   position: relative;
   top: 400px;
-  left: 200px;
+  left: 30px;
 }
-.reserve-desc2 h1{
+.reserve-desc2 h2{
   position: relative;
   top: 350px;
-  left: 800px;
+  left: 650px;
   color: #FF17A6;
+  width: 30%;
 }
-.reserve-desc2 span{
+.reserve-desc2 p{
   position: relative;
   top: 355px;
-  left: 800px;
+  left: 650px;
+  width: 30%;
 }
